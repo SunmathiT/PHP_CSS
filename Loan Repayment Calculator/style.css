@@ -1,0 +1,313 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #081226,
+        #102542,
+        #1b365d,
+        #2f4f7f
+    );
+
+    color: white;
+
+    padding: 30px;
+}
+
+
+.container {
+
+    width: 95%;
+    max-width: 1100px;
+
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 255, 0.25);
+
+    backdrop-filter: blur(10px);
+}
+
+
+h1 {
+
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+
+.subtitle {
+
+    margin-bottom: 25px;
+
+    color: #d9eaff;
+}
+
+
+form {
+
+    max-width: 550px;
+
+    margin: auto;
+
+    text-align: left;
+}
+
+
+label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+input:focus {
+
+    box-shadow: 0 0 10px #00ffff;
+}
+
+
+button {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #00c6ff;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background: #0072ff;
+
+    transform: scale(1.02);
+}
+
+
+/* Summary */
+
+.summary {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: rgba(0, 200, 255, 0.15);
+
+    border-radius: 15px;
+}
+
+
+.summary h2 {
+
+    margin-bottom: 20px;
+}
+
+
+.summary-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.summary-grid div {
+
+    padding: 18px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border-radius: 12px;
+}
+
+
+.summary-grid span {
+
+    display: block;
+
+    color: #d9eaff;
+
+    margin-bottom: 8px;
+}
+
+
+.summary-grid strong {
+
+    font-size: 20px;
+
+    color: #ffffff;
+}
+
+
+/* Schedule */
+
+.schedule {
+
+    margin-top: 30px;
+
+    text-align: left;
+}
+
+
+.schedule h2 {
+
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+th,
+td {
+
+    padding: 12px;
+
+    text-align: center;
+
+    border-bottom: 1px solid
+        rgba(255, 255, 255, 0.15);
+}
+
+
+th {
+
+    background: rgba(0, 198, 255, 0.30);
+
+    font-weight: bold;
+}
+
+
+tr:hover {
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* Back Button */
+
+.back {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 20px;
+
+    background: #0072ff;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+}
+
+
+.back:hover {
+
+    background: #00c6ff;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .container {
+
+        width: 100%;
+
+        padding: 25px 15px;
+    }
+
+    .summary-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .schedule {
+
+        overflow-x: auto;
+    }
+
+    table {
+
+        min-width: 700px;
+    }
+
+}
+

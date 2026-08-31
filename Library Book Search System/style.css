@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #081226,
+        #102542,
+        #1b365d,
+        #2f4f7f
+    );
+
+    color: white;
+}
+
+.container {
+
+    width: 95%;
+
+    max-width: 750px;
+
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 255, 0.3);
+
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+
+    margin-bottom: 12px;
+}
+
+.container > p {
+
+    color: #d9eaff;
+
+    margin-bottom: 25px;
+}
+
+form {
+
+    max-width: 550px;
+
+    margin: auto;
+
+    text-align: left;
+}
+
+label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+input:focus {
+
+    box-shadow: 0 0 10px #00ffff;
+}
+
+button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #00c6ff,
+        #0072ff
+    );
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+
+    transform: scale(1.02);
+
+    box-shadow: 0 0 15px #00c6ff;
+}
+
+.result {
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+.result h2 {
+
+    margin-bottom: 12px;
+}
+
+.result p {
+
+    margin-top: 8px;
+
+    color: #e5f2ff;
+}
+
+.available {
+
+    background: rgba(0, 200, 120, 0.18);
+
+    border-left: 5px solid #00d084;
+}
+
+.unavailable {
+
+    background: rgba(255, 60, 60, 0.18);
+
+    border-left: 5px solid #ff5555;
+}
+
+.books {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 15px;
+
+    text-align: left;
+}
+
+.books h2 {
+
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+.books ul {
+
+    list-style: none;
+}
+
+.books li {
+
+    padding: 10px;
+
+    margin: 5px 0;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    border-radius: 8px;
+}
+
+.back {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 22px;
+
+    background: #0072ff;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+}
+
+.back:hover {
+
+    background: #00c6ff;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+
+        padding: 25px 15px;
+    }
+
+    h1 {
+
+        font-size: 25px;
+    }
+}
